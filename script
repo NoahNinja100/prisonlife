@@ -1,0 +1,58 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Prison Life", "BloodTheme")
+
+--Main
+local Main = Window:NewTab("Main")
+local GuiSection = Main:NewSection("Gui")
+local OtherSection = Main:NewSection("Other")
+
+
+GuiSection:NewButton("PrisonDestroyerV3", "Main Gui", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoahNinja100/prisonlife/main/prisondestroyerv3"))()
+end)
+
+GuiSection:NewButton("PrisonDestroyerV2", "Name Color Changer, other stuff", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoahNinja100/prisonlife/main/prisondestroyerv2"))()
+end)
+
+GuiSection:NewButton("AntiAbusers", "May Not Work", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoahNinja100/prisonlife/main/antiabusers"))()
+end)
+
+OtherSection:NewButton("Septex Admin", "Admin Commands Built For Prison Life", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+
+
+--Universal Scripts
+local Universal = Window:NewTab("Universal")
+local AdminSection = Universal:NewSection("Admin")
+local AimSection = Universal:NewSection("Aim")
+local RandomSection = Universal:NewSection("Other")
+
+
+AdminSection:NewButton("Infinite Yield", "Best Admin Out There", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+AimSection:NewButton("Aim Hacks", "Wintertime by Nosss", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime"))()
+end)
+
+RandomSection:NewButton("Keystrokes", "By Nosss", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NoahNinja100/universal/main/keystrokes'))()
+end)
+
+RandomSection:NewButton("Crosshair", "Custom By Nosss", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NoahNinja100/universal/main/customcrosshair'))()
+end)
+
+
+--Options
+local Options = Window:NewTab("Options")
+local OptionSection = Options:NewSection("Options - Fully Developed By NoahNinja100")
+
+
+OptionSection:NewKeybind("Toggle Ui", "Toggles To Ui", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
